@@ -1,0 +1,75 @@
+.main-formulario {
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+        .formulario {
+            -webkit-box-shadow: 10px 10px 35px 14px rgba(148, 64, 110, 0.83);
+            -moz-box-shadow: 10px 10px 35px 14px rgba(148, 64, 110, 0.83);
+            box-shadow: 10px 10px 35px 14px rgba(148, 64, 110, 0.83);
+            width: 30vw;
+            height: 50vh;
+            margin: 2rem;
+            h3 {
+                font-size: 3rem;
+                margin: 1rem 0 ;
+            }
+        }
+            .etiquetas {
+                display: grid;
+                grid-template-columns: repeat(2, 50%);
+                grid-template-rows: repeat(3, 1fr);
+                row-gap: 1rem;
+                justify-items: center;
+                align-items: center;
+                padding: 0 1.5rem 2rem 1.5rem;
+                color: var(--marron);
+                label {
+                    display: block;
+                }
+                .nombre {
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 2;
+                }
+                .tel {
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 2;
+                }
+                .email {
+                    grid-column: 1 / 2;
+                    grid-row: 2 / 3;
+                }
+                .mensaje {
+                    grid-column: 2 / 3;
+                    grid-row: 2 / 3;
+                }
+                .enviado {
+                    grid-column: 1 / 4;
+                    width: 100%;
+                    height: 40%;
+                    text-align: center;
+                    font-size: 2rem;
+                    margin-bottom: 7rem;
+                    button {
+                        background-color: var(--marron);
+                        color: var(--rosado);
+                        width: 100%;
+                        cursor: pointer;
+                        border: none;
+                        text-decoration: none;
+                    }
+                }
+                        #nombre, 
+                        #email,
+                        #tel,
+                        #mensaje {
+                            width: 100%;
+                            border-color: var(--rosado);
+                            border-radius: .5rem;
+                            padding: 1.5rem;
+                            background-color: #e4dfda;
+                            color: #ae474c;
+                            font-size: 1.5rem;
+                            }
+            }
+}

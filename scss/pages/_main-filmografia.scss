@@ -1,0 +1,28 @@
+.main-filmografia {
+    .films {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 7rem;
+        margin: 0 2rem;
+        .film {
+            width: 30vw;
+            height: 85vh;
+            h2 {
+                text-align: left;
+                padding-top: 2rem;
+                height: 10%;
+            }
+            img {
+                width: 60%;
+                height: 60%;
+            }
+            p {
+                color: var(--blanco);
+                text-align: left;
+                height: 5%;
+                padding-right: 8rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    .logo {
+        margin: 2.5rem 0;
+    }
+    .navegacion {
+        margin-top: 4rem;
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            column-gap: 1.5rem;
+            text-align: center;
+        }
+            .boton {
+                background-color: var(--blanco);
+                color: var(--rosado);
+                text-transform: uppercase;
+                font-weight: bold;
+                list-style-type: none;
+                overflow: hidden;
+                font-size: 1.5rem;
+                padding: 2rem;
+                border-radius: 5%;
+                border: none;
+            }
+        }
+}

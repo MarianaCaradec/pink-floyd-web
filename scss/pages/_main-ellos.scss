@@ -1,0 +1,31 @@
+.main-ellos {
+    .card-group {
+        .card {
+            background-color: var(--rosado);
+            border-block-start-color: 3%;
+            border-color: var(--marron);
+            font-family: var(--fuenteprinc);
+            .card-title {
+                font-size: 2.4rem;
+                letter-spacing: .5rem;
+                text-align: center;
+                color: var(--marron);
+                padding: 1rem;
+            }
+            .card-text, .text-muted {
+                font-size: 1.8rem;
+                color: var(--marron);
+                margin-bottom: 1rem;
+            }
+            .card-img-top {
+                width: 100%;
+                height: 70%;
+                object-fit: cover;
+            }
+            .card-footer {
+                padding: 2rem;;
+            }
+        }
+    }
+    
+}

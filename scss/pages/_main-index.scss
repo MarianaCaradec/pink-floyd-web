@@ -1,0 +1,28 @@
+.main-index {
+    font-family: var(--fuenteprinc);
+    max-width: 160rem;
+    margin: 0 auto;
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-flow: column;
+        gap: 4rem;
+        .par-main {
+            text-align: justify;
+            color: var(--blanco);
+            margin: 7rem;
+            align-self: center;
+        }
+        .carousel {
+            .carousel-indicators .active {
+                background-color: var(--rosado);
+            }
+                .carousel-control-prev-icon,
+                .carousel-control-next-icon  {
+                    background-color: var(--rosado);
+                }
+        }
+
+    }
+}

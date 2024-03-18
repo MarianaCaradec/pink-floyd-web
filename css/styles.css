@@ -7,23 +7,25 @@
   --blanco: #e4dfda;
 }
 
-/* GLOBALES */
-html {
+/* * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+} */
+
+/* GLOBALES */
+
+/* html {
   font-size: 62.5%;
-  scroll-snap-type: y proximity;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-body {
+} */
+
+/* body {
   background-color: var(--negro);
   font-size: 1.6rem;
   line-height: 1.5;
-}
-h1,
+} */
+
+/* h1,
 h2,
 h3 {
   font-weight: bold;
@@ -43,6 +45,7 @@ h3 {
   color: var(--rosado);
   font-size: 2.4rem;
 }
+
 a {
   text-decoration: none;
   color: var(--rosado);
@@ -52,8 +55,9 @@ a:hover {
 }
 a:active {
   color: var(--negro);
-}
-.header {
+} */
+
+/* .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,10 +89,10 @@ a:active {
   padding: 2rem;
   border-radius: 5%;
   border: none;
-}
+} */
 
 /* INDEX */
-.main {
+/* .main-index {
   font-family: var(--fuenteprinc);
   max-width: 160rem;
   margin: 0 auto;
@@ -101,18 +105,6 @@ a:active {
   gap: 4rem;
 }
 
-.carousel-indicators .active {
-  background-color: var(--rosado);
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon  {
-  background-color: var(--rosado);
-}
-
-.img-footer {
-  max-width: 4rem;
-}
 .par-main {
   text-align: justify;
   color: var(--blanco);
@@ -120,17 +112,21 @@ a:active {
   align-self: center;
 }
 
+.carousel-indicators .active {
+  background-color: var(--rosado);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon  {
+  background-color: var(--rosado);
+} */
+
 /* ELLOS */
-.card {
+/* .card {
   background-color: var(--rosado);
   border-block-start-color: 3%;
   border-color: var(--marron);
   font-family: var(--fuenteprinc);
-}
-
-.card-img-top {
-  width: 100%;
-  height: 70%;
 }
 
 .card-title {
@@ -141,29 +137,29 @@ a:active {
   padding: 1rem;
 }
 
-.card-text, .text-muted {
-  font-size: 1.8rem;
-  color: var(--marron);
-  margin-bottom: 1rem;
+.card-img-top {
+  width: 100%;
+  height: 70%;
 }
 
 .card-footer {
   padding: 2rem;;
-}
+} */
 
 /* DISCOGRAFIA */
-.imagen-discografia {
+/* .imagen-discografia {
   width: 100vw;
 }
+
 .discos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, auto);
   grid-auto-flow: dense;
-}
+} */
 
 /* FILMOGRAFIA */
-.films {
+/* .films {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
@@ -189,13 +185,14 @@ a:active {
   text-align: left;
   height: 5%;
   padding-right: 8rem;
-}
+} */
 
 /* CONTACTO */
-.contenedor {
+/* .contenedor {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
 .formulario {
   -webkit-box-shadow: 10px 10px 35px 14px rgba(148, 64, 110, 0.83);
   -moz-box-shadow: 10px 10px 35px 14px rgba(148, 64, 110, 0.83);
@@ -208,9 +205,7 @@ a:active {
   font-size: 3rem;
   margin: 1rem 0 ;
 }
-.formulario label {
-  display: block;
-}
+
 .etiquetas {
   display: grid;
   grid-template-columns: repeat(2, 50%);
@@ -222,18 +217,10 @@ a:active {
   color: var(--marron);
 }
 
-#nombre, 
-#email,
-#tel,
-#mensaje {
-  width: 100%;
-  border-color: var(--rosado);
-  border-radius: .5rem;
-  padding: 1.5rem;
-  background-color: #e4dfda;
-  color: #ae474c;
-  font-size: 1.5rem;
+.etiquetas label {
+  display: block;
 }
+
 .nombre {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -250,6 +237,20 @@ a:active {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
+
+#nombre, 
+#email,
+#tel,
+#mensaje {
+  width: 100%;
+  border-color: var(--rosado);
+  border-radius: .5rem;
+  padding: 1.5rem;
+  background-color: #e4dfda;
+  color: #ae474c;
+  font-size: 1.5rem;
+}
+
 .enviado {
   grid-column: 1 / 4;
   width: 100%;
@@ -265,14 +266,16 @@ a:active {
   cursor: pointer;
   border: none;
   text-decoration: none;
-}
+} */
 
-footer {
+/* FOOTER */
+/* footer {
   display: flex;
   justify-content: space-evenly;
   padding: 2rem;
   margin-top: 5rem;
 }
+
 .enlaces {
   display: flex;
   justify-content: flex-end;
@@ -281,9 +284,13 @@ footer {
   width: 50%;
 }
 
+.img-footer {
+  max-width: 4rem;
+} */
+
 
 /* desde desktop a tablet (768 a 1024px) */
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .header,
   footer {
     flex-direction: column;
@@ -294,19 +301,21 @@ footer {
     padding: 0;
   }
 
-  footer {
-    margin-top: 10rem;
+  .logo {
+    object-fit: cover;
   }
-  .navegacion {
+
+    .navegacion {
     margin-top: 0;
   }
   .navegacion ul {
     padding: 1rem;
   }
 
-  .logo {
-    object-fit: cover;
+  footer {
+    margin-top: 10rem;
   }
+
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
@@ -333,8 +342,8 @@ footer {
     height: 65vh;
   }
   .film img {
-    width: 60%;
-    height: 60%;
+    width: 100%;
+    height: 50%;
   }
   .film h2 {
     margin: 1rem;
@@ -358,32 +367,28 @@ footer {
   .formulario {
     width: auto;
   }
-}
+} */
 
 /* desde tablet a mobile (320 a 768px) */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .navegacion ul {
     display: block;
-  }
-
-  footer {
-    margin: 0
-  }
-
+  } */
+/* 
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     gap: 4rem;
     justify-items: center;
     align-items: center;
-  }
+  } */
 
-  .discos {
+  /* .discos {
     grid-template-columns: 1fr;
     padding: 1rem;
-  }
+  } */
 
-  .films {
+  /* .films {
     grid-template-columns: 1fr;
     row-gap: 0;
     justify-items: center;
@@ -402,13 +407,21 @@ footer {
     height: auto;
     padding-top: 0;
   }
+  .film img {
+    width: 65%;
+    height: 55%;
+  }
   .film p {
     height: 20%;
-  }
-
+  } */
+/* 
   .formulario {
     width: 100vw;
     height: 50vh;
     margin: 1.5rem;
   }
-}
+
+  footer {
+    margin: 0
+  }
+} */
