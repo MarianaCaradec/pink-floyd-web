@@ -1,12 +1,16 @@
 .main-discografia {
     .imagen-discografia {
-        width: 90vw;
-        overflow: hidden;
+        overflow-x: hidden;
+        img {
+            width: 100vw;
+            padding: 0;
+        }
     }
         .discos {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(5, auto);
-            grid-auto-flow: dense;
+            padding: 0;
+            overflow-x: hidden;
         }
 }
