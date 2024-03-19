@@ -18,7 +18,7 @@
                 height: 60%;
             }
             p {
-                color: var(--blanco);
+                color: nth($list: $colores, $n: 4);
                 text-align: left;
                 height: 5%;
                 padding-right: 8rem;

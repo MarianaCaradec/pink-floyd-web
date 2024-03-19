@@ -1,5 +1,5 @@
 .main-index {
-    font-family: var(--fuenteprinc);
+    font-family: $fuenteprincipal;
     max-width: 160rem;
     margin: 0 auto;
     .grid {
@@ -10,17 +10,17 @@
         gap: 4rem;
         .par-main {
             text-align: justify;
-            color: var(--blanco);
+            color: nth($list: $colores, $n: 4);
             margin: 7rem;
             align-self: center;
         }
         .carousel {
             .carousel-indicators .active {
-                background-color: var(--rosado);
+                background-color: nth($list: $colores, $n: 2);
             }
                 .carousel-control-prev-icon,
                 .carousel-control-next-icon  {
-                    background-color: var(--rosado);
+                    background-color: nth($list: $colores, $n: 2);
                 }
         }
 

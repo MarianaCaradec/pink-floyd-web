@@ -1,20 +1,20 @@
 .main-ellos {
     .card-group {
         .card {
-            background-color: var(--rosado);
+            background-color: nth($list: $colores, $n: 2);
             border-block-start-color: 3%;
-            border-color: var(--marron);
-            font-family: var(--fuenteprinc);
+            border-color: nth($list: $colores, $n: 1);
+            font-family: $fuenteprincipal;
             .card-title {
                 font-size: 2.4rem;
                 letter-spacing: .5rem;
                 text-align: center;
-                color: var(--marron);
+                color: nth($list: $colores, $n: 1);
                 padding: 1rem;
             }
             .card-text, .text-muted {
                 font-size: 1.8rem;
-                color: var(--marron);
+                color: nth($list: $colores, $n: 1);
                 margin-bottom: 1rem;
             }
             .card-img-top {

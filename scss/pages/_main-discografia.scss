@@ -1,9 +1,9 @@
 .main-discografia {
     .imagen-discografia {
-        overflow-x: hidden;
+        width: 100%;
         img {
-            width: 100vw;
-            padding: 0;
+            max-width: 100%;
+            max-height: 100%;
         }
     }
         .discos {

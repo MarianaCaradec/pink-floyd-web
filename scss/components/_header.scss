@@ -7,7 +7,6 @@
         margin: 2.5rem 0;
     }
     .navegacion {
-        margin-top: 4rem;
         ul {
             display: flex;
             justify-content: space-evenly;
@@ -15,8 +14,8 @@
             text-align: center;
         }
             .boton {
-                background-color: var(--blanco);
-                color: var(--rosado);
+                background-color: nth($list: $colores, $n: 4);
+                color: nth($list: $colores, $n: 2);
                 text-transform: uppercase;
                 font-weight: bold;
                 list-style-type: none;
