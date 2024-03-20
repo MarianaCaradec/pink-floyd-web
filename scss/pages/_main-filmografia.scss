@@ -1,15 +1,10 @@
 .main-filmografia {
     .films {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, auto);
+        @include grid(repeat(3, 1fr), repeat(2, auto), 0, center, center);
         row-gap: 20rem;
-        justify-content: center;
-        align-items: center;
         margin-bottom: 25rem;
         .film {
-            justify-self: center;
-            align-self: center;
+            @extend %alineaciones;
             width: 30vw;
             height: 90vh;
             margin-bottom: 18rem;

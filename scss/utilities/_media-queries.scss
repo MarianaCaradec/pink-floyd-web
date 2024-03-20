@@ -3,9 +3,7 @@
     // HEADER Y FOOTER
     .header,
     footer {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column, center, center);
         position: relative;
         margin: 1rem 0 1rem 0;
         padding: 0;
@@ -20,33 +18,31 @@
                 }
         }
                     footer {
-                        margin-top: 10rem;
+                        margin-top: 5rem;
                     }
     // MAIN-INDEX
     .main-index {
         .grid {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(3, auto);
-            justify-items: center;
-            align-items: center;
+            @include grid(1fr, repeat(3, auto), 2.5rem, center, center);
         }
             .par-main {
-                margin: 0 2rem;
+                margin: 3rem 2rem 0 2rem;
             }
+                h2 {
+                    margin-top: 0;
+                }
     }
     // DISCOGRAFIA
     .main-discografia {
         .discos {
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(7, 1fr);
+            @include grid(repeat(2, 1fr), repeat(7, 1fr), 0, stretch, center);
             padding: 1rem;
         }
     }
     // FILMOGRAFIA
     .main-filmografia {
         .films {
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, auto);
+            @include grid(repeat(2, 1fr), repeat(3, auto), 0, center, center);
             row-gap: 50rem;
             margin-bottom: 45rem;
         }
@@ -73,11 +69,7 @@
     // CONTACTO
     .main-formulario {
         .contenedor {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(3, auto);
-            gap: 4rem;
-            justify-items: center;
-            align-items: center;
+            @include grid(1fr, repeat(3, auto), 4rem, center, center);
         }
             .formulario {
                 width: auto;
@@ -95,6 +87,7 @@
                 margin-top: 1rem;
                 li {
                     margin-top: 1.5rem;
+                    text-align: center;
                 }
             }
 
@@ -103,34 +96,24 @@
     // MAIN-INDEX
     .main-index {
         .grid {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(3, auto);
-            gap: 4rem;
-            justify-items: center;
-            align-items: center;
+            @include grid(1fr, repeat(3, auto), 4rem, center, center);
         }
     }
     // MAIN-DISCOGRAFIA
     .main-discografia {
         .discos {
-            grid-template-columns: 1fr;
+            @include grid(1fr, 1fr, 0, stretch, center);
             padding: 1rem;
         }
     }
     // MAIN-FILMOGRAFIA
     .main-filmografia {
         .films {
-            display: flex;
-            flex-direction: column;
-            justify-items: center;
-            align-items: center;
+            @include flex(column, center, center);
             margin-bottom: 30rem;
         }
             .film {
-                display: flex;
-                flex-direction: column;
-                justify-self: center;
-                align-self: center;
+                @include flex(column, center, stretch);
                 width: 100vw;
                 height: 100vh;
                 margin-bottom: 25rem;

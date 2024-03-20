@@ -1,12 +1,9 @@
 footer {
-    display: flex;
-    justify-content: space-evenly;
+    @include flex(row, space-evenly, center);
     padding: 2rem;
     margin-top: 5rem;
     .enlaces {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        @include flex(row, flex-end, center);
         column-gap: 2rem;
         width: 50%;
         .img-footer {

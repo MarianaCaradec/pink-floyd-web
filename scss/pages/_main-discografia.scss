@@ -7,9 +7,6 @@
         }
     }
         .discos {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(5, auto);
-            padding: 0;
+            @include grid(repeat(3, 1fr), repeat(5, auto), 0, stretch, center);
         }
 }
