@@ -1,23 +1,457 @@
-/* Error: From line 1, column 1 of scss\utilities\_extend.scss: 
- *   ╷
- * 1 │ %alineaciones{
- *   │ ^^^^^^^^^^^^^
- *   ╵
- * You may not @extend selectors across media queries.
- *     ,
- * 117 |                 @extend %alineaciones;
- *     |                 ^^^^^^^^^^^^^^^^^^^^^
- *     '
- *   scss\utilities\_media-queries.scss 117:17  @import
- *   scss\main.scss 17:9                        root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: From line 1, column 1 of scss\\utilities\\_extend.scss: \a   \2577 \a 1 \2502  %alineaciones{\d\a   \2502  ^^^^^^^^^^^^^\a   \2575 \aYou may not @extend selectors across media queries.\a     \2577 \a 117 \2502                  @extend %alineaciones;\d\a     \2502                  ^^^^^^^^^^^^^^^^^^^^^\a     \2575 \a   scss\\utilities\\_media-queries.scss 117:17  @import\a   scss\\main.scss 17:9                        root stylesheet";
+.main-filmografia .films .film, .main-index .grid .par-main {
+  justify-self: center;
+  align-self: center;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #000000;
+  font-size: 1.6rem;
+  color: #e4dfda;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #e4dfda;
+  font-size: 3.8rem;
+}
+
+h2 {
+  color: #ae474c;
+  font-size: 3rem;
+  margin: 2rem auto 5rem;
+}
+
+h3 {
+  color: #ae474c;
+  font-size: 2.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ae474c;
+}
+a:hover {
+  color: #d4b483;
+}
+a:active {
+  color: #000000;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+}
+.header .logo {
+  margin: 2.5rem 0;
+}
+.header .navegacion ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+.header .navegacion .boton {
+  background-color: #e4dfda;
+  color: #ae474c;
+  text-transform: uppercase;
+  font-weight: bold;
+  list-style-type: none;
+  overflow: hidden;
+  font-size: 1.5rem;
+  padding: 2rem;
+  border: none;
+  border-radius: 5%;
+}
+
+.main-index {
+  font-family: "Poppins", sans-serif;
+  max-width: 160rem;
+  margin: 0 auto;
+}
+.main-index .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 4rem;
+  justify-items: center;
+  align-items: center;
+}
+.main-index .grid .par-main {
+  text-align: justify;
+  color: #e4dfda;
+  margin: 0 3rem;
+}
+.main-index .grid .carousel .carousel-indicators .active {
+  background-color: #ae474c;
+}
+.main-index .grid .carousel .carousel-control-prev-icon,
+.main-index .grid .carousel .carousel-control-next-icon {
+  background-color: #ae474c;
+}
+
+.main-ellos .card-group .card {
+  background-color: #ae474c;
+  border-block-start-color: 3%;
+  border-color: #d4b483;
+  font-family: "Poppins", sans-serif;
+}
+.main-ellos .card-group .card .card-title {
+  font-size: 2.4rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  color: #d4b483;
+  padding: 1rem;
+}
+.main-ellos .card-group .card .card-text, .main-ellos .card-group .card .text-muted {
+  font-size: 1.8rem;
+  color: #d4b483;
+  margin-bottom: 1rem;
+}
+.main-ellos .card-group .card .card-img-top {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+.main-ellos .card-group .card .card-footer {
+  padding: 2rem;
+}
+
+.main-discografia .imagen-discografia {
+  width: 100%;
+}
+.main-discografia .imagen-discografia img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.main-discografia .discos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 0;
+  justify-items: stretch;
+  align-items: center;
+}
+
+.main-filmografia .films {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 0;
+  justify-items: center;
+  align-items: center;
+  row-gap: 20rem;
+  margin-bottom: 20rem;
+}
+.main-filmografia .films .film {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 90vh;
+  margin-top: 18rem;
+}
+.main-filmografia .films .film h2 {
+  text-align: center;
+  height: 8%;
+}
+.main-filmografia .films .film img {
+  width: 60%;
+  height: 60%;
+  margin-bottom: 5rem;
+}
+.main-filmografia .films .film p {
+  color: #e4dfda;
+  text-align: justify;
+  width: 100%;
+  height: 70%;
+}
+
+.main-formulario .contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0;
+  justify-items: center;
+  align-items: center;
+}
+.main-formulario .formulario {
+  -webkit-box-shadow: 10px 10px 35px 14px rgba(148, 64, 110, 0.83);
+  -moz-box-shadow: 10px 10px 35px 14px rgba(148, 64, 110, 0.83);
+  box-shadow: 10px 10px 35px 14px rgba(148, 64, 110, 0.83);
+  width: 30vw;
+  height: 50vh;
+  margin: 2rem;
+}
+.main-formulario .formulario h3 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.main-formulario .etiquetas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  padding: 0 1.5rem 2rem 1.5rem;
+  color: #d4b483;
+}
+.main-formulario .etiquetas label {
+  display: block;
+}
+.main-formulario .etiquetas .nombre {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.main-formulario .etiquetas .tel {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.main-formulario .etiquetas .email {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.main-formulario .etiquetas .mensaje {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.main-formulario .etiquetas .enviado {
+  grid-column: 1/4;
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+.main-formulario .etiquetas .enviado button {
+  background-color: #d4b483;
+  color: #ae474c;
+  width: 100%;
+  padding: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 2%;
+  text-decoration: none;
+}
+.main-formulario .etiquetas #nombre,
+.main-formulario .etiquetas #email,
+.main-formulario .etiquetas #tel,
+.main-formulario .etiquetas #mensaje {
+  width: 100%;
+  border-color: #ae474c;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background-color: #e4dfda;
+  color: #ae474c;
+  font-size: 1.5rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+footer .enlaces {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 2rem;
+  width: 50%;
+}
+footer .enlaces .img-footer {
+  max-width: 4rem;
+}
+
+/* desde desktop a tablet (768 a 1024px) */
+@media screen and (max-width: 1024px) {
+  .header,
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 1rem 0 1rem 0;
+    padding: 0;
+  }
+  .logo {
+    object-fit: cover;
+  }
+  .navegacion {
+    margin-top: 0;
+  }
+  .navegacion ul {
+    padding: 1rem;
+  }
+  footer {
+    margin-top: 5rem;
+  }
+  .main-index .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 2.5rem;
+    justify-items: center;
+    align-items: center;
+  }
+  .main-index .par-main {
+    margin: 3rem 2rem 0 2rem;
+  }
+  .main-index h2 {
+    margin-top: 0;
+  }
+  .main-discografia .discos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 0;
+    justify-items: stretch;
+    align-items: center;
+    padding: 1rem;
+  }
+  .main-filmografia .films {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 0;
+    justify-items: center;
+    align-items: center;
+    row-gap: 30rem;
+    margin-bottom: 45rem;
+  }
+  .main-filmografia .film {
+    width: 100vw;
+    height: 100vh;
+    margin-left: 2rem;
+  }
+  .main-filmografia .film h2 {
+    height: 80%;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+  }
+  .main-filmografia .film img {
+    width: 100%;
+    height: 40%;
+    margin-top: 5rem;
+  }
+  .main-filmografia .film p {
+    padding-right: 0;
+  }
+  .main-formulario .contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 4rem;
+    justify-items: center;
+    align-items: center;
+  }
+  .main-formulario .formulario {
+    width: auto;
+  }
+}
+/* desde tablet a mobile (320 a 768px) */
+@media screen and (max-width: 768px) {
+  .header .navegacion ul {
+    display: block;
+    margin-top: 1rem;
+  }
+  .header .navegacion ul li {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  .main-index .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 4rem;
+    justify-items: center;
+    align-items: center;
+  }
+  .main-discografia .discos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0;
+    justify-items: stretch;
+    align-items: center;
+    padding: 1rem;
+  }
+  .main-filmografia .films {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15rem;
+  }
+  .main-filmografia .film {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 58rem;
+    height: 100vh;
+    width: 100vw;
+  }
+  .main-filmografia .film:first-child {
+    margin-top: 10rem;
+  }
+  .main-filmografia .film:nth-child(3) h2 {
+    margin-bottom: 15rem;
+  }
+  .main-filmografia .film:nth-child(5) h2 {
+    margin-bottom: 20rem;
+  }
+  .main-filmografia .film:nth-child(6) h2 {
+    margin-bottom: 22rem;
+  }
+  .main-filmografia .film h2 {
+    font-size: 2.4rem;
+    max-height: 10%;
+    padding-bottom: 3.5rem;
+  }
+  .main-filmografia .film img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-filmografia .film p {
+    padding: 0;
+    word-break: break-all;
+  }
+  .main-formulario .formulario {
+    width: auto;
+    height: 50vh;
+    margin: 1.5rem;
+  }
+  .main-formulario footer {
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
