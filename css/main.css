@@ -167,7 +167,7 @@ a:active {
 .main-filmografia .films .film {
   width: 30vw;
   height: 90vh;
-  margin-bottom: 18rem;
+  margin: 3rem 0 18rem 0;
 }
 .main-filmografia .films .film h2 {
   text-align: left;
@@ -176,14 +176,16 @@ a:active {
 .main-filmografia .films .film img {
   width: 60%;
   height: 60%;
+  margin-bottom: 5rem;
 }
 .main-filmografia .films .film p {
   color: #e4dfda;
-  text-align: left;
+  text-align: justify;
   width: 100%;
   height: 70%;
   padding-right: 8rem;
   padding-top: 2rem;
+  overflow-wrap: break-word;
 }
 
 .main-formulario .contenedor {
@@ -402,11 +404,12 @@ footer .enlaces .img-footer {
     padding: 1rem;
   }
   .main-filmografia .films {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15rem;
+    justify-items: stretch;
     align-items: center;
-    margin-bottom: 30rem;
   }
   .main-filmografia .film {
     display: flex;
@@ -415,21 +418,20 @@ footer .enlaces .img-footer {
     align-items: stretch;
     width: 100vw;
     height: 100vh;
-    margin-bottom: 25rem;
   }
   .main-filmografia .film h2 {
     max-height: 10%;
-    padding-top: 0;
-    padding-bottom: 3.5rem;
+    padding-top: 45rem;
   }
   .main-filmografia .film img {
-    width: 65%;
-    height: 70%;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    padding-top: 1.5rem;
   }
   .main-filmografia .film p {
-    padding-right: 0;
-    padding-top: 0;
+    font-size: 1.2rem;
+    padding: 0;
+    word-break: break-all;
   }
   .main-formulario .formulario {
     width: auto;
