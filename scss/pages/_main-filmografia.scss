@@ -1,15 +1,16 @@
 .main-filmografia {
     .films {
-        @include grid(repeat(3, 1fr), repeat(2, auto), 0, center, center);
+        @include grid(repeat(2, 1fr), repeat(2, auto), 0, center, center);
         row-gap: 20rem;
         margin-bottom: 25rem;
         .film {
+            @include flex(column, center, center);
             @extend %alineaciones;
             width: 30vw;
             height: 90vh;
-            margin: 3rem 0 18rem 0;
+            margin: 18rem;
             h2 {
-                text-align: left;
+                text-align: center;
                 height: 8%;
             }
             img {
@@ -22,9 +23,9 @@
                 text-align: justify;
                 width: 100%;
                 height: 70%;
-                padding-right: 8rem;
-                padding-top: 2rem;
-                overflow-wrap: break-word;
+                // padding-right: 8rem;
+                // padding-top: 2rem;
+                // overflow-wrap: break-word;
             }
         }
     }
